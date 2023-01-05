@@ -2,7 +2,7 @@
 # 0_add.py
 
 if __name__  == "__main__":
-    """print the sum of two integers"""
+    """print the sum of two integers."""
     from add_0 import add
 
     a = 1
