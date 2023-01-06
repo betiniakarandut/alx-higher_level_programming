@@ -1,6 +1,6 @@
 # Python - import & modules
 
-This project is meant to take me deeper in understanding python modules, built-in functions as well as give me greater insight to creating modularized codes and functions. I learnt about importing and using functions in Python modules.I over practiced using the builtin function
+This project is meant to take me deeper in understanding python modules, built-in functions as well as give me greater insight to creating modularized codes and functions. I learnt about importing and using functions in Python modules. I also practice using the builtin function
 `dir()` and using command line arguments within Python programs.
 
 ## Tasks :page_with_curl:
