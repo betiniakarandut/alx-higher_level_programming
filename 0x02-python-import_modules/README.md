@@ -14,7 +14,7 @@ This project is meant to take me deeper in understanding python modules, built-i
 * **1. My first toolbox!**
   * [1-calculation.py](./1-calculation.py): Python program that imports functions
   from the file [calculator_1.py](./1-calculator.py) and prints the result
-  of the addition, subtraction, multiplication and division of `10` and `5`.
+  of the `addition`, `subtraction`, `multiplication` and division of `10` and `5`.
   * Output: `<a value> <operator> <b value> = <operation(a, b) value>` followed by a new line.
 
 * **2. How to make a script dynamic!**
