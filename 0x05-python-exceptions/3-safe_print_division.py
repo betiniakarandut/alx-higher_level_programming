@@ -3,7 +3,7 @@
 
 def safe_print_division(a, b):
     """Divides 2 integers and prints the result.
-    
+
     Args:
         a(int): First integer.
         b(int): Second integer.
