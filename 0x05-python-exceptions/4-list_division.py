@@ -27,4 +27,5 @@ def list_division(my_list_1, my_list_2, list_length):
             div = 0
         finally:
             new_list.append(div)
+    print("")
     return (new_list)
