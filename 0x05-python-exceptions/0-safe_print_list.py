@@ -14,14 +14,12 @@ def safe_print_list(my_list=[], x=0):
         The number of items printed.
 
     """
-    res = 0
 
-    for i in range(x):
-        try:
-            print("{}".format(my_list[i]), end="")
-            res += 1
-        except (IndexError, IndentationError):
-            print("Oops! Please give proper index")
-            break
-    print("")
-    return (res)
+    try:
+        for y in range(x):
+            print("{}".format(my_list[y]), end="")
+    except IndexError:
+        print()
+        return y
+    print()
+    return x
