@@ -12,10 +12,9 @@ def safe_print_division(a, b):
         The division of a by b.
     """
     try:
-        div = a / b
-    except (TypeError, ZeroDivisionError):
-        div = None
+        result = a / b
+    except ArithmeticError:
+        result = None
     finally:
-        print("Inside result: {}".format(div))
-    print("")
-    return (div)
+        print("Inside result: {}".format(result))
+    return result
