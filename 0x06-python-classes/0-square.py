@@ -3,10 +3,10 @@
 # Auth: Betini Akarandut
 
 class Square:
-	"""Defines a square.
+    """Defines a square.
 
-	Args:
-		None.
-	"""
+    Args:
+        None.
+    """
 
-	pass
+    pass
