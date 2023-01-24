@@ -11,10 +11,9 @@ def safe_print_integer_err(value):
         If a TypeError or ValueError occurs - False.
         Otherwise - True.
     """
-    import sys
     try:
         print("{:d}".format(value))
         return True
-    except (ValueError, TypeError) as error:
-        sys.stderr.write("Exception: {}\n".format(error))
+    except (TypeError, ValueError) as ve:
+        sys.stderr.write("Exception: {}\n".format(ve.args[0]))
         return False
