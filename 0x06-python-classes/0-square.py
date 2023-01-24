@@ -3,10 +3,5 @@
 # Auth: Betini Akarandut
 
 class Square:
-    """Defines a square.
-
-    Args:
-        None.
-    """
-
-    pass
+    """Defines a square."""
+	pass
