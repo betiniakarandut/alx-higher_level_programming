@@ -2,6 +2,8 @@
 
 
 def magic_calculation(a, b):
+    """Does same thing as python bytecode provided."""
+
     result = 0
     for i in range(1, 3):
         try:
