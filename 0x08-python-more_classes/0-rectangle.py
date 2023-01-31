@@ -6,5 +6,5 @@ Module to create a Rectangle class.
 
 
 class Rectangle:
-	"""Defines a rectangle."""
-	pass
+    """Defines a rectangle."""
+    pass
