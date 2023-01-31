@@ -7,7 +7,7 @@ Module to create a Rectangle class.
 
 class Rectangle:
 	"""Defines a rectangle (based on 0-rectangle.py)."""
-	
+
 	def __init__(self, width=0, height=0):
 		"""Initializes a class instance.
 		
@@ -57,12 +57,3 @@ class Rectangle:
 			return (0)
 
 		return(2 * (self.__width + self.__height))
-
-# my_rectangle = Rectangle(6, 4)
-# print("Area: {} - Perimeter: {}".format(my_rectangle.area(), my_rectangle.perimeter()))
-
-# print("--")
-
-# my_rectangle.width = 10
-# my_rectangle.height = 3
-# print("Area: {} - Perimeter: {}".format(my_rectangle.area(), my_rectangle.perimeter()))

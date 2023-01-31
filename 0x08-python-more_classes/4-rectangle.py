@@ -7,7 +7,7 @@ Module to create a Rectangle class.
 
 class Rectangle:
 	"""Defines a rectangle (based on 0-rectangle.py)."""
-	
+
 	def __init__(self, width=0, height=0):
 		"""Initializes a class instance.
 		
@@ -79,27 +79,3 @@ class Rectangle:
 		draw_rect = "Rectangle(" + str(self.__width)
 		draw_rect += ", " + str(self.__height) + ")"
 		return (draw_rect)
-
-# my_rectangle = Rectangle(2, 4)
-# print(str(my_rectangle))
-# print("--")
-# print(my_rectangle)
-# print("--")
-# print(repr(my_rectangle))
-# print("--")
-# print(hex(id(my_rectangle)))
-# print("--")
-
-# # create new instance based on representation
-# new_rectangle = eval(repr(my_rectangle))
-# print(str(new_rectangle))
-# print("--")
-# print(new_rectangle)
-# print("--")
-# print(repr(new_rectangle))
-# print("--")
-# print(hex(id(new_rectangle)))
-# print("--")
-
-# print(new_rectangle is my_rectangle)
-# print(type(new_rectangle) is type(my_rectangle))

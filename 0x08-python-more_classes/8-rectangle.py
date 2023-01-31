@@ -7,7 +7,7 @@ Module to create a Rectangle class.
 
 class Rectangle:
 	"""Defines a rectangle (based on 0-rectangle.py)."""
-	
+
 	number_of_instances = 0
 	print_symbol = "#"
 
