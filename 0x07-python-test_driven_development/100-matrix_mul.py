@@ -65,5 +65,4 @@ def matrix_mul(m_a, m_b):
                 prod += row[i] * col[i]
             new_row.append(prod)
         new_matrix.append(new_row)
-
     return new_matrix
