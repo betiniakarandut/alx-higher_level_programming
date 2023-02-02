@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 # file_name: 3-say_my_name.py
 # Betini Akarandut <betiniakarandut@gmail.com>
+"""Defines a name-printing function."""
 
 
 def say_my_name(first_name, last_name=""):
