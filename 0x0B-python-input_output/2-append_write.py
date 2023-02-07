@@ -4,7 +4,7 @@
 """Defines a file-appending function."""
 
 
-def append_write(filename="", "a" text=""):
+def append_write(filename="", text=""):
 	"""Appends a string to the end of a UTF8 text file.
 
     Args:
@@ -13,6 +13,6 @@ def append_write(filename="", "a" text=""):
     Returns:
         The number of characters appended.
     """
-	with open(filename, encoding="utf-8") as f:
+	with open(filename, "a" encoding="utf-8") as f:
 		wr = f.write(text)
 		return wr
