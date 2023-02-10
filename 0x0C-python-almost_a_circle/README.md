@@ -1,7 +1,7 @@
-# Python - Almost a circle
+# 0x0C. Python - Almost a circle
 
-OOP in details. This the implementation of Object Oriented Programming in full.
-TDD(Test Driven Development) is not left out. Writing test before the actual
+* `OOP` in details. This the implementation of Object Oriented Programming in full.
+* `TDD` (Test Driven Development) is not left out. Writing test before the actual
 implementation was duly utilized. I worked with `unittest` in this particular
 project.
 
