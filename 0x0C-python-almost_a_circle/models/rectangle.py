@@ -85,8 +85,11 @@ class Rectangle(Base):
 		return (self.width * self.height)
 
 	def display(self):
-		"""Prints in stadard output.
-		The Rectangle instance with #."""
+		"""Prints the Rectangle using `#` character."""
+		if self.width == 0 or self.height == 0:
+			print("")
+			return
+		
 		[print("") for y in range(self.y)]
 		for h in range(self.height):
 			[print(" ", end="") for x in range(self.x)]
@@ -98,13 +101,13 @@ class Rectangle(Base):
 
 		Args:
 			*args(int): new attribute values.
-				- 1st argument represents the id attribute
-				- 2nd argument represents the width attribute
-				- 3rd argument represents the height attribute
-				- 4th argument represents the x coordinate attribute
-				- 5th argument represents the y coordinate attribute
-			**kwargs(dict):
-				New key and value pairs attributes
+			- 1st argument represents the id attribute
+			- 2nd argument represents the width attribute
+			- 3rd argument represents the height attribute
+			- 4th argument represents the x coordinate attribute
+			- 5th argument represents the y coordinate attribute
+		**kwargs(dict):
+			New key and value pairs attributes
 		"""
 		if args and len(args) != 0:
 			a = 0
@@ -143,15 +146,15 @@ class Rectangle(Base):
 	def to_dictionary(self):
 		"""Returns dictionary representation of Rectangle."""
 		return {
-			"id": self.id,
-			"width": self.width,
-			"height": self.height,
-			"x": self.x,
-			"y": self.y
+		"id": self.id,
+		"width": self.width,
+		"height": self.height,
+		"x": self.x,
+		"y": self.y
 		}
 
 	def __str__(self):
 		"""Return  printable representation of rectangle."""
 		return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id,
-			                                           self.x, self.y,
-			                                           self.width, self.height)
+		self.x, self.y,
+		self.width, self.height)
