@@ -1,22 +1,23 @@
 #!/usr/bin/python3
-# Creates the State “California” with the City “San Francisco”
-# from the database hbtn_0e_100_usa.
-# Usage: ./100-relationship_states_cities.py <mysql username> /
-#                                            <mysql password> /
-#                                            <database name>
-import sys
-from sqlalchemy import create_engine
-from sqlalchemy.orm import sessionmaker
-from relationship_state import State
-from relationship_city import Base, City
+"""Defines the City class"""
+from sqlalchemy import Column, Integer, String, ForeignKey
+from relationship_state import Base, State
 
-if __name__ == "__main__":
-    engine = create_engine("mysql+mysqldb://{}:{}@localhost/{}"
-                           .format(sys.argv[1], sys.argv[2], sys.argv[3]),
-                           pool_pre_ping=True)
-    Base.metadata.create_all(engine)
-    Session = sessionmaker(bind=engine)
-    session = Session()
 
-    session.add(City(name="San Francisco", state=State(name="California")))
-    session.commit()
+class City(Base):
+    """Represents a city for a MySQL database.
+
+    Inherits from SQLAlchemy Base and links to the MySQL table cities.
+
+    Attributes:
+        id (int): unique id generated automatically, cannot be null,
+            primary key
+        name (str): name of the city, cannot be null
+        state_id (int): id of the state that the city is in, cannot be null,
+            foreign key to states.id
+    """
+    __tablename__ = 'cities'
+    id = Column(Integer, autoincrement=True, unique=True, nullable=False,
+                primary_key=True)
+    name = Column(String(128), nullable=False)
+    state_id = Column(Integer, ForeignKey('states.id'), nullable=False)
