@@ -1,16 +1,36 @@
 #!/usr/bin/python3
-# Displays all values in the states table of the database hbtn_0e_0_usa
-# whose name matches that supplied as argument.
-# Safe from SQL injections.
-# Usage: ./3-my_safe_filter_states.py <mysql username> \
-#                                     <mysql password> \
-#                                     <database name> \
-#                                     <state name searched>
+"""
+Script that takes in arguments and displays all values in the states table
+of hbtn_0e_0_usa where name matches the argument, safe from MySQL injections
+"""
+
 import sys
 import MySQLdb
 
 if __name__ == "__main__":
-    db = MySQLdb.connect(user=sys.argv[1], passwd=sys.argv[2], db=sys.argv[3])
-    c = db.cursor()
-    c.execute("SELECT * FROM `states`")
-    [print(state) for state in c.fetchall() if state[1] == sys.argv[4]]
+    # Connect to MySQL database
+    db = MySQLdb.connect(
+        host="localhost",
+        user=sys.argv[1],
+        passwd=sys.argv[2],
+        db=sys.argv[3],
+        port=3306)
+
+    # Create cursor to execute queries
+    cur = db.cursor()
+
+    # Get the state name to search for and sanitize it
+    state = MySQLdb.escape_string(sys.argv[4])
+
+    # Execute SQL query with sanitized input
+    cur.execute("SELECT * FROM states WHERE name LIKE BINARY %s ORDER BY id",
+                (state,))
+
+    # Fetch all rows and print them
+    rows = cur.fetchall()
+    for row in rows:
+        print(row)
+
+    # Close cursor and database connection
+    cur.close()
+    db.close()
