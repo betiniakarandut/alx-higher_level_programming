@@ -7,7 +7,13 @@ import MySQLdb
 
 if __name__ == '__main__':
     # Connect to database
-    db = MySQLdb.connect(user=sys.argv[1], passwd=sys.argv[2], db=sys.argv[3], port=3306, host='localhost')
+    db = MySQLdb.connect(
+                         user=sys.argv[1],
+                         passwd=sys.argv[2],
+                         db=sys.argv[3],
+                         port=3306,
+                         host='localhost'
+                        )
     cursor = db.cursor()
 
     # Execute query
@@ -21,4 +27,3 @@ if __name__ == '__main__':
     # Close connection
     cursor.close()
     db.close()
-
