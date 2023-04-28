@@ -3,7 +3,7 @@
 ## Description :house:
 In this project, I began to learn about how object-relational mapping is used for
 database scripting. I used MySQLdb and SQLAlchemy to
-query, create, edit, and delete tables in MySQL. The experience was fun!
+query, create, edit, and delete tables in MySQL. The experience was no child's play :fire:!
 
 ## Tasks :pencil:
 
