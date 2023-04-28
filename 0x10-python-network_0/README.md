@@ -1,18 +1,12 @@
-# Python - Network #0
+# Python - Network #0 :applaud_hands:
 
-In this networking project, I used `curl` in Bash scripts to send various types
+## Description :house:
+In this networking project, I began to learn how to use `curl` in Bash scripts to send various types
 of HTTP headers. In the process, I learned about how URL's work, domain names,
 the many different HTTP request/repsonse header fields and status codes, and
 how to utilize cookies.
 
-Task six was an algorithm challenge separate from the overall project theme
-completed in Python.
-
-## Tests :heavy_check_mark:
-
-* [tests](./tests): Folder of test files. Provided by Holberton School.
-
-## Tasks :page_with_curl:
+## Tasks :pencil:
 
 NOTE: The `curl` behavior in all Bash scripts were written to interact with a
 server set up on a container provided by Holberton School.
@@ -35,12 +29,12 @@ server set up on a container provided by Holberton School.
 
 * **4. cURL headers**
   * [4-header.sh](./4-header.sh): Bash script that sends a `GET` request to a
-  given URL with a header variable `X-HolbertonSchool-User-Id=98` and displays
+  given URL with a header variable `X-School-User-Id=98` and displays
   the response body.
 
 * **5. cURL POST parameters**
   * [5-post_params.sh](./5-post_params.sh): Bash script that sends a `POST`
-  request to a given URL with the variables `email=hr@holbertonschool.com` and
+  request to a given URL with the variables `email=test@gmail.com` and
   `subject=I will always be here for PLD` and displays the response body.
 
 * **6. Find a peak**
