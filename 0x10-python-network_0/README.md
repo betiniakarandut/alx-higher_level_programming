@@ -1,4 +1,4 @@
-# Python - Network #0 :applaud_hands:
+# 0x10. Python - Network #0 :fire:
 
 ## Description :house:
 In this networking project, I began to learn how to use `curl` in Bash scripts to send various types
