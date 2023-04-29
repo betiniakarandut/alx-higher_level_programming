@@ -21,4 +21,3 @@ try:
         print("No result")
 except ValueError:
     print("Not a valid JSON")
-
