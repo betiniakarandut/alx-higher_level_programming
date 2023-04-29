@@ -8,9 +8,7 @@ if __name__ == "__main__":
 
     url = s.argv[1]
     email = s.argv[2]
-    data = urllib.parse.urlencode({'email' : email}).encode('utf-8')
+    data = urllib.parse.urlencode({'email': email}).encode('utf-8')
     with urllib.request.urlopen(url, data) as res:
         body_res = res.read().decode('utf-8')
         print('Your email is:', body_res)
-        
-        
